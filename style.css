@@ -1,0 +1,123 @@
+/* Global CSS styles for the entire page */
+body {
+    font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+/* Main container styles using flexbox layout */
+.containter {
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 100vh;
+}
+
+/* Styles for the left-side section */
+.left-side {
+    padding: 0px 20px 20px 20px;
+    flex: 3 1 0;
+    display: flex;
+    flex-direction: column;
+    min-width: 200px;
+    background-image: url(./img/Simple.svg);
+    background-size: cover;
+}
+
+/* Styles for the right-side section */
+.right-side {
+    padding: 40px 20px 20px 20px;
+    flex: 2 1 0;
+    display: flex;
+    background-image: url(./img/Leaves.svg);
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Styles for the banner image */
+.banner {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Styles for the input boxes within the form */
+.input-box {
+    margin-top: 60px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Common styles for input fields */
+input {
+    border-radius: 5px;
+    border: 0;
+    border-bottom: 1px solid rgb(0, 0, 0);
+    padding: 6px 6px 6px 10px;
+    background-color: rgba(255, 255, 255, 0);
+    height: 30px;
+}
+
+/* Placeholder styles for input fields */
+input::placeholder {
+    color: rgb(58, 56, 56);
+    font-size: clamp(1em, 1.5vw, 1.5em);
+}
+
+/* Styles for input fields when in focus */
+input:focus {
+    background-color: #ffebef;
+    outline-color: #e1abb6;
+}
+
+/* Styles for the logo in the left-side section */
+.logo {
+    font-family: 'GFS Didot', serif;
+    font-size: clamp(1em, 1.5vw, 2em);
+    font-weight: bold;
+}
+
+/* Styles for the center all text & button in the form */
+#sign-up-form {
+   text-align: center;
+}
+
+/* Styles for the form title in the right-side section */
+#sign-up-form h1 {
+    font-size: clamp(1.5em, 3vw, 2em);
+}
+
+/* Styles for the submit button */
+#submit-button {
+    border: 0;
+    background-color: #FFFDE3;
+    padding: 10px 30px;
+    letter-spacing: .05em;
+    border-radius: 5px;
+    margin-top: 40px;
+    font-size: clamp(1em, 3vw, 1.5em);
+    outline: none;
+}
+
+/* Hover styles for the logo and submit button */
+.logo:hover,
+#submit-button:hover {
+    cursor: pointer;
+}
+
+/* Styles for images to fit within their containers */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Styles for the "thank you" message after successful form submission */
+.thankYou {
+    font-size: clamp(2em, 3vw, 2.5em);
+    text-align: center;
+    color: brown;
+    padding: 25px;
+}

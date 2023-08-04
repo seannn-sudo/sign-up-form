@@ -1,0 +1,65 @@
+<!-- Start of HTML document -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign-up Form</title>
+  
+  <!-- External CSS files -->
+  <link rel="stylesheet" href="normalize.css">
+  <link rel="stylesheet" href="style.css">
+  
+  <!-- Importing Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=GFS+Didot&display=swap" rel="stylesheet">
+  
+  <!-- External JavaScript file for form validation -->
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <!-- Main container with flexbox layout -->
+  <div class="containter">
+    <!-- Left-side section -->
+    <div class="left-side">
+      <!-- Logo for the online store -->
+      <p class="logo">EleganteEssence</p>
+      
+      <!-- Banner image -->
+      <div class="banner"><img src="./img/gift.svg"></div>
+      
+      <!-- Short message about the store -->
+      <p style="text-align: center; color: #404545;">
+        Elevate your style. Shop women's fashion online. Exclusive designs, unbeatable prices.
+      </p>  
+    </div>
+    
+    <!-- Right-side section -->
+    <div class="right-side">
+        <!-- Sign-up form -->
+        <form action="#" id="sign-up-form" method="post">
+          <!-- Form title -->
+          <h1>Ready to Save? Sign Up and Enjoy 20% Off!</h1>
+          
+          <!-- Input fields for user information -->
+          <div class ="input-box">
+            <input type="text" name="first_name" id="first_name" placeholder="*First Name" required>
+            <input type="text" name="last_name" id="last_name" placeholder="*Last Name" required>
+            <input type="email" name="email" id="email" placeholder="*E-Mail" required pattern="^[^ ]+@[^ ]+\.[a-z]{2,63}$">
+            <input type="tel" name="phone_number" id="phone_number" placeholder="*Phone Number" required pattern="^0\d{8,}$">
+            <input type="password" name="pass_word" id="pass_word" placeholder="*Password" required minlength="6">
+            <input type="password" name="confirm_pass_word" id="confirm_pass_word" placeholder="*Confirm Password" required>
+          </div>
+          
+          <!-- Submit button -->
+          <button id="submit-button" type="submit">Create Account</button>
+        
+          <!-- Link for users with existing accounts -->
+          <p>Already have an account? <a href=#>Log in</a></p>
+        </form>
+    </div>
+  </div>
+</body>
+</html>
+<!-- End of HTML document -->
