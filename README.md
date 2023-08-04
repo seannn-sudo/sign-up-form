@@ -1,5 +1,4 @@
 <h1>Sign-up Form<h1>
-<h2>Description</h2>
 This repository contains a simple Sign-up Form webpage built using HTML, CSS, and JavaScript
 <h2><a href ="https://seannn-sudo.github.io/sign-up-form/" >Live Demo</a></h2>
 <h2>Features</h2>
